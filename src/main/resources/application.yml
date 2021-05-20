@@ -1,0 +1,16 @@
+server:
+  servlet:
+    #配置访问时的路径
+    context-path: /
+spring:
+  #配置文件
+  profiles:
+    active: dev
+
+
+#日志配置
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: ${user.dir}/elk_elasticsearch_log
+

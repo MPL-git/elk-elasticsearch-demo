@@ -1,0 +1,16 @@
+server:
+  port: 8089
+
+base:
+  url: 127.0.0.1:${server.port}
+  host: http://${base.url}
+
+
+#swagger开关
+swagger:
+  enable: true
+
+
+#Elasticsearch
+elasticsearch:
+  url: 127.0.0.1:9200  #多个节点用逗号分隔
